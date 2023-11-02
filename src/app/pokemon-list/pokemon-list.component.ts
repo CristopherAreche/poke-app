@@ -9,8 +9,9 @@ import { FavoritesService } from '../services/favorites.service';
 })
 export class PokemonListComponent implements OnInit {
   pokemons: any[] = [];
-  page = 1;
-  totalPokemons!: number;
+  page: number = 1;
+  itemsPerPage = 10;
+  totalPokemons: number = 0;
 
   constructor(
     private dataService: DataService,
@@ -27,10 +28,12 @@ export class PokemonListComponent implements OnInit {
   }
   //Get Pokemons
   getPokemons() {
+    const offset = (this.page - 1) * this.itemsPerPage;
     this.dataService
-      .getPokemons(10, this.page + 0)
+      .getPokemons(this.itemsPerPage, offset)
       .subscribe((response: any) => {
         this.totalPokemons = response.count;
+        this.pokemons = [];
         response.results.forEach((result: any) => {
           this.dataService
             .getMoreData(result.name)

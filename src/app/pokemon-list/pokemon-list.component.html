@@ -37,5 +37,7 @@
   </div>
 </div>
 <pagination-controls
-  (pageChange)="page = $event; pokemons = []; getPokemons()"
+  (pageChange)="page = $event; getPokemons()"
+  previousLabel="Previous"
+  nextLabel="Next"
 ></pagination-controls>
