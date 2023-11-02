@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: PokemonListComponent,
   },
   {

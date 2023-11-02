@@ -18,6 +18,7 @@ export class FavoritesService {
     if (!this.favoritePokemons.some((favorite) => favorite.id === pokemon.id)) {
       this.favoritePokemons.push(pokemon);
       this.saveToSessionStorage();
+      alert('Pokemon has been added to favorite successfully');
     }
   }
   removeFromFavorites(pokemon: any) {

@@ -2,7 +2,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px 0px;
+  padding: 10px 0px;
   text-align: center;
   background-color: seagreen;
 }
