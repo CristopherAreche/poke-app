@@ -1,0 +1,42 @@
+/* Header */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  text-align: center;
+  background-color: seagreen;
+}
+.navbar-brand h1 {
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+  margin-left: 1em;
+}
+.navbar-menu {
+  margin-right: 1em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 3px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3em;
+}
+.navbar-menu .navbar-item {
+  color: white;
+  text-decoration: none;
+}
+.navbar-menu .navbar-item:active {
+  color: inherit;
+}
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+  color: black;
+}
+
+.navbar-menu .navbar-item:hover {
+  cursor: pointer;
+}

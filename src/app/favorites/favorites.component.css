@@ -1,0 +1,27 @@
+.pokemon-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  gap: 10px;
+}
+.box {
+  height: auto;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+.pokemon-grid .box img {
+  max-width: 100%;
+}
+.box h3,
+.box p {
+  margin: 0;
+}
+.pokemon-grid .box .btn {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 5px 7px;
+  border-radius: 3em;
+}
+.pokemon-grid .box .btn:hover {
+  cursor: pointer;
+}
